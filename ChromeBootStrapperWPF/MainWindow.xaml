@@ -22,26 +22,31 @@
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="5" Padding="10" MinHeight="42" VerticalContentAlignment="Center">NAME:</Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Name="extName" Text="{Binding NameText, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="extName" Text="{Binding NameText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50">
+        </TextBox>
         <Label Grid.Row="1" Grid.Column="0" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="5, 5, 5, 5" Padding="10" VerticalContentAlignment="Center" MinHeight="42">DESCRIPTION:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Name="description" Text="{Binding DescriptionText, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="5,2,2,2" MinHeight="50" SpellCheck.IsEnabled="True"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="description" Text="{Binding DescriptionText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="5,2,2,2" MinHeight="50" SpellCheck.IsEnabled="True">
+        </TextBox>
         <Label Grid.Row="2" Grid.Column="0" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="5, 5, 5, 5" Padding="10" VerticalContentAlignment="Center" MinHeight="42">AUTHOR:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Name="author" Text="{Binding AuthorText, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="author" Text="{Binding AuthorText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50">
+        </TextBox>
         <Label Grid.Row="3" Grid.Column="0" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="5, 5, 5, 5" Padding="10" VerticalContentAlignment="Center" MinHeight="42">LOCATION:</Label>
-        <TextBox Grid.Row="3" Grid.Column="1" Name="location" Text="{Binding LocationText, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50"/>
-        <Button Grid.Row="3" Grid.Column="2" Name="locSearch" Height="30" Width="30" Margin="10" FontFamily="Lucida Console" FontWeight="Bold" BorderBrush="{x:Null}" Click="launchBrowser">
+        <TextBox Grid.Row="3" Grid.Column="1" Name="location" Text="{Binding LocationText, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50">
+        </TextBox>
+        <Button Grid.Row="3" Grid.Column="2" Name="locSearch" Height="30" Width="30" Margin="10" FontFamily="Lucida Console" FontWeight="Bold" BorderBrush="{x:Null}" Click="LaunchBrowser">
             <Button.Background>
                 <ImageBrush ImageSource="ellipsisWhite.png"/>
             </Button.Background>
         </Button>
         <Label Grid.Row="4" Grid.Column="0" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="5, 5, 5, 5" VerticalContentAlignment="Center" Padding="10" MinHeight="42">ICON:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Name="icon" Text="{Binding IconText, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50"/>
-        <Button Grid.Row="4" Grid.Column="2" Name="iconSearch" Height="30" Width="30" Margin="10,0,10,10" BorderBrush="{x:Null}" Click="launchBrowser">
+        <TextBox Grid.Row="4" Grid.Column="1" Name="icon" Text="{Binding IconText, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" FontFamily="Lucida Console" FontSize="20" Margin="10" MinWidth="500" BorderBrush="Black" Background="Black" Padding="2" MinHeight="50">
+        </TextBox>
+        <Button Grid.Row="4" Grid.Column="2" Name="iconSearch" Height="30" Width="30" Margin="10,0,10,10" BorderBrush="{x:Null}" Click="LaunchBrowser">
             <Button.Background>
                 <ImageBrush ImageSource="ellipsisWhite.png"/>
             </Button.Background>
         </Button>
-        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Name="create" FontSize="20" FontFamily="Lucida Console" Background="Black" Foreground="WhiteSmoke" Margin="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5" MinWidth="262" MinHeight="50" Click="createExtension">CREATE</Button>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Name="create" FontSize="20" FontFamily="Lucida Console" Background="Black" Foreground="WhiteSmoke" Margin="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5" MinWidth="262" MinHeight="50" Click="CreateExtension">CREATE</Button>
     </Grid>
 
 </Window>

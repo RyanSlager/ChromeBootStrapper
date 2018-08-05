@@ -18,3 +18,4 @@ C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\D
 C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\ChromeBootStrapper.pdb
 C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.csproj.CopyComplete
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs

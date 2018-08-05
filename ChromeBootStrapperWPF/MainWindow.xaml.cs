@@ -20,36 +20,32 @@ namespace ChromeBootStrapperWPF
             DataContext = m;
         }
 
-        private void launchBrowser(object sender, RoutedEventArgs e)
+        private void LaunchBrowser(object sender, RoutedEventArgs e)
         {
             System.Windows.Controls.Button b = (System.Windows.Controls.Button)sender;
-            
-            //System.Windows.MessageBox.Show(name);
 
             if(b.Name.Equals("iconSearch"))
             {
-                m.IconText = pickIcon();
+                m.IconText = PickIcon();
+
             }
             else if(b.Name.Equals("locSearch"))
             {
-                m.LocationText = pickLocation();
+                m.LocationText = PickLocation();
             }
-
-            
-            System.Windows.MessageBox.Show(m.IconText, m.LocationText);
         }
 
-        private void createExtension(object sender, RoutedEventArgs e)
+        private void CreateExtension(object sender, RoutedEventArgs e)
         {
-            System.Windows.MessageBox.Show($"{m.IconText}, {m.LocationText}, {m.NameText}, {m.DescriptionText}, {m.AuthorText}");
+            //System.Windows.MessageBox.Show($"{m.IconText}, {m.LocationText}, {m.NameText}, {m.DescriptionText}, {m.AuthorText}");
+            string dirPath = $"{m.LocationText}\\{m.NameText}";
+            Manifest man = new Manifest(dirPath, m.NameText, m.DescriptionText, m.AuthorText, false);
 
-            //Manifest man = new Manifest(m.LocationText, m.NameText, m.DescriptionText,
-            //    m.AuthorText, false);
-
-            //man.writeManifest();
+            CreateDirectory();
+            man.writeManifest();
         }
 
-        private string pickIcon()
+        private string PickIcon()
         {
             OpenFileDialog iconFBD = new OpenFileDialog();
             string iconPath = "icon.png";
@@ -62,7 +58,7 @@ namespace ChromeBootStrapperWPF
             return iconPath;
         }
 
-        private string pickLocation()
+        private string PickLocation()
         {
             FolderBrowserDialog storageDirFBD = new FolderBrowserDialog();
             string dirPath;
@@ -78,6 +74,12 @@ namespace ChromeBootStrapperWPF
                 DirectoryInfo dir = Directory.CreateDirectory(dirPath);
                 return dirPath;
             }
+        }
+
+        private void CreateDirectory()
+        {
+            System.IO.Directory.CreateDirectory($"{m.LocationText}\\{m.NameText}");
+            System.IO.File.Copy(m.IconText, $"{m.LocationText}\\{m.NameText}\\icon.png", true);
         }
     }
 }
