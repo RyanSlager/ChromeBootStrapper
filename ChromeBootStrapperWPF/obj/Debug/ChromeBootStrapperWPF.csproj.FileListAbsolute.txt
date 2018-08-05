@@ -1,0 +1,15 @@
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\ChromeBootStrapperWPF.exe.config
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\ChromeBootStrapperWPF.exe
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\ChromeBootStrapperWPF.pdb
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.csprojAssemblyReference.cache
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\App.g.cs
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF_MarkupCompile.cache
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF_MarkupCompile.lref
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\MainWindow.baml
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.g.resources
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.Properties.Resources.resources
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.csproj.GenerateResource.cache
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.exe
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.pdb
