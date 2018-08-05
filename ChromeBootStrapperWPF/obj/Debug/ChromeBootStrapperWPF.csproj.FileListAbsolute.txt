@@ -13,3 +13,8 @@ C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\D
 C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.csproj.CoreCompileInputs.cache
 C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.exe
 C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.pdb
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\ChromeBootStrapper.dll
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\ChromeBootStrapper.pdb
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ryan\Desktop\Projects\ChromeBootStrapperWPF\ChromeBootStrapperWPF\obj\Debug\ChromeBootStrapperWPF.csproj.CopyComplete
